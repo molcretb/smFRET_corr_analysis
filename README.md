@@ -14,6 +14,11 @@ The original data study by Zosel *et al.* has been published in PNAS: F. Zosel, 
 
 The dataset probes the interactions between the nuclear-coactivator binding domain of CBP/p300 (NCBD) and the intrinsically disordered activation domain of the steroid receptor coactivator 3 (ACTR), measured using confocal single-photon detection; the data have been binned to 1 ms. The dataset comprises 19 molecules with average series length of 120 s.
 
+## Google Colab notebook
+The correlation analysis pipeline is available from Google Colab as an interactive Jupyter Notebook: [click here to access](https://colab.research.google.com/github/molcretb/smFRET_corr_analysis/blob/main/pipeline_Dhar_Berg_smFRET_correlation_framework.ipynb)
+
+It contains the full instructions on how to conduct the analysis step by step.
+
 ## License
 The codes associated with this repository are licensed under the MIT license. The original dataset from the smFRET tools benchmark study is licenced under the CC-BY-4.0 license
 
