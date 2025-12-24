@@ -42,9 +42,6 @@ def Correlation_1D(X1_traj, X0_traj):
     Tau = [] # np.zeros(CurrentLength)
     Weight = [] # np.zeros(CurrentLength)
     
-    X1_traj = np.array(X1_traj)
-    X0_traj = np.array(X0_traj)
-    
     for k in range(4):
         
         # Calculate the correlation function
@@ -105,8 +102,6 @@ def Primed1DCorrelation(X1_traj, m, X0_traj, n):
         1D array of the number of original time points within each time bin
 
     """
-    X1_traj = np.array(X1_traj)
-    X0_traj = np.array(X0_traj)
     
     # Calculate X0nPrime
     if n == 0:
