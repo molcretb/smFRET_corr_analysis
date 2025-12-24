@@ -32,6 +32,13 @@ The correlation analysis pipeline is available from Google Colab as an interacti
 
 It contains the full instructions on how to conduct the analysis step by step.
 
+### Content of the GitHub repository
+This repository contains the following resources:
+* correlation_module.py: Python functions to calculate the correlations and primed-correlations functions used in the analysis. It corresponds to the section "SII. PSEUDOCODE, A.Correlation Module" of the Supplementary Information associated with the original study.
+* inversion_module.py: Python functions used to retrieve the FRET states space from the computed primed-correlation functions. It corresponds to the section "SII. PSEUDOCODE, B.Inversion Module" of the Supplementary Information associated with the original study.
+* pipeline_Dhar_Berg_smFRET_correlation_framework.ipynb: Jupyter notebook used to run the analysis pipeline from the extraction of the smFRET traces from the input dataset to the recovering of the states space. This Jupyter Notebook can either be run locally or on Google Colab.
+* selection_data_traces.csv: list of the smFRET data files used as input dataset. Each row corresponds to the path of one of the data files.
+
 ## License
 The codes associated with this repository are licensed under the MIT license. The original dataset from the smFRET tools benchmark study is licenced under the CC-BY-4.0 license
 
