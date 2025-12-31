@@ -7,7 +7,9 @@ The goal of this project is to reproduce the results presented in the previously
 
 !!!
 
-*Right now (2025-12-24), the implementation of the framework into Python is not fully complete; I cannot reproduce the figures of the original study. Debugging of the scripts is ongoing...*
+*(2025-12-31) The Python implementation now seems to be working after correcting the Primed1DCorrelation function from the correlation module, following Mark A. Berg's feedbacks. I'm able to correctly generate the state space on Figure 7 of the original study with the two peaks at the correct values. The bi-exponential fit on Figure 6 using the same values as the ones provided in the figure's legend also matches my plots.*
+
+*A proper sanity check would be needed to fully confirm this Python version, either by direct comparison with the original study plots data and / or by other users.*
 
 !!!
 
