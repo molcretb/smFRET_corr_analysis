@@ -123,10 +123,6 @@ def Primed1DCorrelation(X1_traj, m, X0_traj, n):
         X1mPrime = np.ones(len(X1_traj))
     else:
         X1mPrime = X1_traj
-        
-    # Truncate the first n points of X1mPrime and the last n points of X1
-    X1mPrime = X1mPrime[n:]
-    X1_traj = X1_traj[:-n]
     
     if m >= 2:
         for i in range(2, m + 1):
@@ -134,7 +130,12 @@ def Primed1DCorrelation(X1_traj, m, X0_traj, n):
             X1_traj = X1_traj[:-1]
             X1mPrime = X1mPrime * X1_traj
     
-    return Correlation_1D(X1mPrime, X0nPrime[:len(X1mPrime)])
+    # Truncate the first n points of X1mPrime and the last m points of X0nPrime
+    # Create the nδt shift in delay between the trajectories in Eq. (27)
+    X1mPrime = X1mPrime[n:]
+    X0nPrime = X0nPrime[:-m]
+    
+    return Correlation_1D(X1mPrime, X0nPrime)
 
 
 def  EnAvePrimedCorrelation(X1Ensemble, m, X0Ensemble, n):
